@@ -1,0 +1,72 @@
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
+@import "https://unpkg.com/open-props/buttons.min.css";
+
+
+body {
+  display: grid;
+  
+}
+
+
+
+li {
+
+}
+nav{
+position: sticky;
+  bottom: 0;
+  gap: var(--size-4);
+  box-shadow: var(--shadow-4);
+  
+}
+.menu ul {
+
+  justify-content: space-around;
+}
+.menu a {
+  padding: 0.5rem 1rem;
+  background-image: var(--gradient-3);
+  border: solid;
+
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 60px;
+  box-shadow: var(--shadow-6);
+  text-shadow: -0.3px -0.3px 0 var(--gray-9), 0.3px 0.3px 0 var(--gray-9);
+}
+
+.menu a:hover {
+	background-image: var(--gradient-3);
+	background-color: var(--gray-9);
+}
+.menu li {
+  display: inline;
+}
+
+nav > ul {
+  display: flex;
+  list-style-type: none;
+  padding-inline-start: 0;
+  gap: var(--size-5);
+}
+.page {
+	
+}
+.zagolovok {
+  display: flex;
+  place-content: center;
+  text-align: center;
+  background-image: var(--gradient-3);
+  box-shadow: var(--shadow-4);
+  background-color: var(--gray-9);
+
+}
+.zagolovok h1 {
+	color: var(--gray-0);
+	border-color: var(--_accent-2);
+	text-shadow: -0.7px -0.7px 0 var(--gray-9), 0.7px 0.7px 0 var(--gray-9);
+
+}
+
