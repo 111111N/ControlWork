@@ -1,48 +1,47 @@
 @import "https://unpkg.com/open-props";
 @import "https://unpkg.com/open-props/normalize.min.css";
 @import "https://unpkg.com/open-props/buttons.min.css";
-
+@import "open-props/colors-hsl";
 
 body {
   display: grid;
-  
+  background-color: hsl(-20,15%,90%);
 }
-
-
-
-li {
-
-}
+/*https://htmlacademy.ru/blog/soft/editors-for-the-coders*/
 nav{
-position: sticky;
-  bottom: 0;
+  position: sticky;
+  top: 0;
   gap: var(--size-4);
-  box-shadow: var(--shadow-4);
-  
+white-space: nowrap;
 }
-.menu ul {
 
+.menu ul {
   justify-content: space-around;
 }
-.menu a {
-  padding: 0.5rem 1rem;
-  background-image: var(--gradient-3);
-  border: solid;
 
+.menu a {
+  padding: 0 3rem;
+  background-image: var(--gradient-8);
+  border: solid;
+  font-family: var(--font-sans);
   color: #fff;
-  font-size: 1.5rem;
+
+  font-size: 1.0rem;
   font-weight: bold;
-  border-radius: 60px;
+  border-radius: 30px;
+  border-width: 2px;
   box-shadow: var(--shadow-6);
   text-shadow: -0.3px -0.3px 0 var(--gray-9), 0.3px 0.3px 0 var(--gray-9);
 }
 
 .menu a:hover {
-	background-image: var(--gradient-3);
+	background-image: var(--gradient-8);
 	background-color: var(--gray-9);
 }
-.menu li {
+.menu li a[href]:not(:hover,:focus-visible) {
   display: inline;
+    color: var(--pink-0);
+    text-decoration-color: var(--gray-9);
 }
 
 nav > ul {
@@ -58,7 +57,7 @@ nav > ul {
   display: flex;
   place-content: center;
   text-align: center;
-  background-image: var(--gradient-3);
+  background-image: var(--gradient-8);
   box-shadow: var(--shadow-4);
   background-color: var(--gray-9);
 
@@ -66,7 +65,11 @@ nav > ul {
 .zagolovok h1 {
 	color: var(--gray-0);
 	border-color: var(--_accent-2);
-	text-shadow: -0.7px -0.7px 0 var(--gray-9), 0.7px 0.7px 0 var(--gray-9);
+	text-shadow: -1.5px -.5px 0 var(--gray-9), 0.5px 0.5px 0 var(--gray-9);
+  font-family: var(--font-serif);
+  line-height: var(--font-lineheight-0);
+  font-weight: var(--font-weight-1);
 
 }
+
 
