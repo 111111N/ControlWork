@@ -108,7 +108,7 @@ nav > ul {
   font-weight: var(--font-weight-0);
   letter-spacing: var(--font-letterspacing-1);
   color: var(--pink-1);
-  text-
+
 }
 
 .text{
@@ -140,7 +140,7 @@ background-image: var(--gradient-8);
   font-weight: var(--font-weight-2);
   letter-spacing: var(--font-letterspacing-3);
   font-size: var(--font-size-2);
-text-shadow: -1.2px 0 0 hsl(255,0%,0%), 0.4px 0 0 hsl(255,0%,70%);
+text-shadow: -0.5px 0 0 hsl(255,0%,0%), 0.2px 0 0 hsl(255,0%,70%);
 }
 
 .sprava{
@@ -153,5 +153,45 @@ text-shadow: -1.2px 0 0 hsl(255,0%,0%), 0.4px 0 0 hsl(255,0%,70%);
   font-weight: var(--font-weight-2);
 letter-spacing: var(--font-letterspacing-3);
 font-size: var(--font-size-2);
-text-shadow: -1.2px 0 0 hsl(255,0%,0%), 0.4px 0 0 hsl(255,0%,70%);
+text-shadow: -0.5px 0 0 hsl(255,0%,0%), 0.2px 0 0 hsl(255,0%,70%);
+}
+
+.top{
+display: flex;
+  place-content: end;
+  margin: 0px 0 8px;
+  background-image: var(--gradient-8);
+  box-shadow: var(--shadow-4);
+  background-color: var(--gray-0);
+}
+
+.Avtor{
+  color: var(--gray-0);
+  border-color: var(--_accent-2);
+  font-family: var(--font-sans);
+  line-height: var(--font-lineheight-5);
+  font-weight: var(--font-weight-5);
+  letter-spacing: var(--font-letterspacing-1);
+  color: var(--pink-1);
+  box-shadow: var(--shadow-6);
+}
+
+.bot{
+display: flex;
+  place-content: end;
+  margin: 0px 0 0;
+  background-image: var(--gradient-8);
+  box-shadow: var(--shadow-4);
+  background-color: var(--gray-0);
+}
+
+.Tema{
+  color: var(--gray-0);
+  border-color: var(--_accent-2);
+  font-family: var(--font-sans);
+  line-height: var(--font-lineheight-5);
+  font-weight: var(--font-weight-5);
+  letter-spacing: var(--font-letterspacing-1);
+  color: var(--pink-1);
+  box-shadow: var(--shadow-6);
 }
