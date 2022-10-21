@@ -16,6 +16,7 @@ nav{
   top: 0;
   gap: var(--size-4);
 white-space: nowrap;
+
 }
 h6{}
 
@@ -97,7 +98,7 @@ nav > ul {
   background-image: var(--gradient-8);
   box-shadow: var(--shadow-4);
   background-color: var(--gray-9);
-
+  box-shadow: 0 20px rgba(0, 0, 0, 0.2), 0 -55px rgba(0, 0, 0, 0.2);
 }
 .zagolovok h1 {
   color: var(--gray-0);
@@ -127,7 +128,7 @@ nav > ul {
   font-size: var(--font-size-4);
   letter-spacing: var(--font-letterspacing-1);
   text-shadow: -0.5px 0 0 hsl(255,0%,0%), 0.6px 0 0 hsl(255,0%,70%);
-
+box-shadow: var(--shadow-6);
 }
 
 .sleva{
@@ -141,6 +142,7 @@ background-image: var(--gradient-8);
   letter-spacing: var(--font-letterspacing-3);
   font-size: var(--font-size-2);
 text-shadow: -0.5px 0 0 hsl(255,0%,0%), 0.2px 0 0 hsl(255,0%,70%);
+box-shadow: var(--shadow-6);
 }
 
 .sprava{
@@ -154,6 +156,7 @@ text-shadow: -0.5px 0 0 hsl(255,0%,0%), 0.2px 0 0 hsl(255,0%,70%);
 letter-spacing: var(--font-letterspacing-3);
 font-size: var(--font-size-2);
 text-shadow: -0.5px 0 0 hsl(255,0%,0%), 0.2px 0 0 hsl(255,0%,70%);
+box-shadow: var(--shadow-6);
 }
 
 .top{
@@ -169,7 +172,8 @@ display: flex;
   color: var(--gray-0);
   border-color: var(--_accent-2);
   font-family: var(--font-sans);
-  line-height: var(--font-lineheight-5);
+  line-height: var(--font-lineheight-9);
+
   font-weight: var(--font-weight-5);
   letter-spacing: var(--font-letterspacing-1);
   color: var(--pink-1);
@@ -181,7 +185,7 @@ display: flex;
   place-content: end;
   margin: 0px 0 0;
   background-image: var(--gradient-8);
-  box-shadow: var(--shadow-4);
+  box-shadow: 0 -20px rgba(0, 0, 0, 0.2);
   background-color: var(--gray-0);
 }
 
