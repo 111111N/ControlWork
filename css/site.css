@@ -8,6 +8,7 @@
 body {
   background-image: var(--gradient-28);
   background-color: hsl(-20,15%,90%);
+  min-width: 1024px;
 }
 
 nav{
@@ -19,6 +20,7 @@ white-space: nowrap;
 
 .menu ul {
   justify-content: space-around;
+
 }
 
 .menu a {
@@ -27,7 +29,6 @@ white-space: nowrap;
   border: solid;
   font-family: var(--font-sans);
   color: #fff;
-
   font-size: 1.0rem;
   font-weight: bold;
   border-width: 2px;
@@ -36,21 +37,19 @@ white-space: nowrap;
   padding-inline: var(--size-4);
   padding-block: var(--size-2);
   border-radius: var(--radius-3);
-
-
-  --_link-bg: var(--gradient-8);
-  --_link-text: var(--gradient-0);
   display: flex;
   gap: var(--size-0);
+
   }
  
 .menu li > a {
-  background-image: var(--_link-bg);
+  background-image: var(--gradient-8);
   color: var(--gray-0);
   outline-offset: 3px;
   transition: 
     background-image 0.2s var(--ease-3),
-    color 0.2s var(--ease-3);
+    color 0.1s var(--ease-3);
+
   }
 
 .submenushka {
@@ -71,6 +70,7 @@ gap: var(--size-2);
 .menu a:hover {
   background-image: var(--gradient-8);
   background-color: var(--gray-9);
+
 }
 
 .menu li a[href]:not(:hover,:focus-visible) {
@@ -92,6 +92,7 @@ nav > ul {
   list-style-type: none;
   padding-inline-start: 0;
   gap: var(--size-5);
+
 }
 
 .zagolovok {
@@ -119,13 +120,13 @@ nav > ul {
 
 .text{
   display: grid;
-  grid-template-columns: 32fr 4fr;
+  grid-template-columns: 8fr 1fr;
   margin: 20px 0;
 }
 
 .center {
   color: var(--gray-9);
-margin: 30px;
+  margin: 30px;
   font-family: var(--font-sans);
   line-height: var(--font-lineheight-8);
   font-weight: var(--font-weight-5);
@@ -219,23 +220,28 @@ display: flex;
 }
 
 .tbl {
- height: 10px;
+ height: 100px;
  width: 90%;
+ max-width: 1800px;
  line-height: var(--font-lineheight-1);
   letter-spacing: var(--font-letterspacing-0);
   font-size:  var(--font-size-2);
-  color:  var(--gray-7);
+  font-weight: var(--font-weight-5);
+  color:  var(--gray-9);
   box-shadow: var(--shadow-4);
   border-width: 5px; 
-  border-color: rgb(216,191,216,0.7);
+  border-color: rgb(216,191,216,0.9);
+  list-style-type: square;
 }
 
 .interface{
+    
     max-width: 150%;
     height: auto;
     border-color: #fff;
   border-width: 5px; 
   box-shadow: var(--shadow-6);
+
 }
 
 .you{
@@ -243,3 +249,39 @@ display: flex;
 height: 350px;
 }
 
+.stroka{
+  display: inline;
+
+}
+.tbl2
+{
+font-size:  var(--font-size-3);
+font-weight: var(--font-weight-5);
+}
+
+.tbl td, .tbl th{
+  border-width: 2px;
+  border-color: rgb(216,191,216,0.5);
+}
+
+caption{
+font-size:  var(--font-size-6);
+}
+
+.dv{
+  font-size:  var(--font-size-6);
+}
+
+.tbl3{
+
+font-size:  var(--font-size-1);
+line-height: var(--font-lineheight-0);
+font-weight: var(--font-weight-4);
+text-shadow: 0px 0 0 hsl(255,0%,0%), 0px 0 0 hsl(2,50%,70%);
+}
+
+.tbl3 th{
+line-height: var(--font-lineheight-0);
+font-size:  var(--font-size-3);
+font-weight: var(--font-weight-6);
+}
