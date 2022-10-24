@@ -55,19 +55,26 @@ nav{
     position: absolute;
     flex-flow: column wrap;
     gap: var(--size-0);
+
     }
 .submenushka li1 {
-    margin: 8px -50px 0;
+    margin: 8px -42px 0;
+    width: 180px;
     }
 
 .menu li:hover .submenushka{
-
-display: flex;
 position: absolute;
+display: inline-flex;
 gap: var(--size-0);
-width: 50px;
+
+place-content: center;
+  text-align: center;
 }
-  
+.menu .here{
+  width: 200px;
+  place-content: center;
+  text-align: center;
+}
 
 .menu a:hover {
   background-image: var(--gradient-8);
@@ -76,7 +83,7 @@ width: 50px;
 }
 
 .menu li a[href]:not(:hover,:focus-visible) {
-  display: inline;
+  display: flex;
     color: var(--pink-0);
     text-decoration-color: var(--gray-9);
 
@@ -88,6 +95,7 @@ width: 50px;
   background-image: var(--gradient-28);
   color: var(--gray-9);
   text-decoration-color: var(--gray-9);
+
 }
 
 nav > ul {
@@ -154,6 +162,15 @@ letter-spacing: var(--font-letterspacing-3);
 font-size: var(--font-size-2);
 text-shadow: -1.5px 0 0 hsl(255,0%,0%), 1px 0 0 hsl(2,50%,70%);
 box-shadow: var(--shadow-6);
+}
+.sprava a{
+color: var(--pink-1);
+text-shadow: none;
+}
+. {
+  font-weight: var(--font-weight-9);
+  line-height: var(--font-lineheight-1);
+  letter-spacing: var(--font-letterspacing-0);
 }
 
 .sprava h2,.sprava h5{
@@ -308,4 +325,61 @@ max-width: 80%;
 line-height: var(--font-lineheight-9);
 font-weight: var(--font-weight-4);
 font-size:  var(--font-size-4);
+}
+
+.tbl4 caption{
+  font-size: var(--size-8)
+}
+
+.tbl4 {
+font-size: var(--size-4);
+line-height: var(--font-lineheight-0);
+  letter-spacing: var(--font-letterspacing-0);
+  font-size:  var(--font-size-4);
+  font-weight: var(--font-weight-1);
+  color:  var(--gray-9);
+  box-shadow: var(--shadow-4);
+  border-width: 5px; 
+  border-color: rgb(216,191,216,0.9);
+  box-shadow: var(--shadow-6);
+  border-radius: 5px;
+
+
+}
+
+.tbl4 td,.tbl4 th{border-width: 5px; 
+  border-color: rgb(216,191,216,0.6);
+  box-shadow: var(--shadow-4);
+  font-weight: var(--font-weight-4);
+  }
+
+.tbl4 a{
+  color: var(--gray-8);  
+}
+
+.name
+{ font-size: var(--size-5);
+  font-weight: var(--font-weight-5);
+}
+
+.name a[href]:is(:visited){
+  color:var(--gray-7)
+}
+.name a[href]:not(:visited){
+  color:var(--gray-9)
+}
+.kartinka{
+width: 700px;
+transition:width 0.3s ease-out;
+box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, .5);
+}
+.kartinka:hover
+{
+width: 800px;
+box-shadow: var(--shadow-6);
+box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, .5)
+}
+
+.opisanie{
+max-width: 700px;
 }
